@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="STOPER" Content="STOPER" HorizontalAlignment="Left" Margin="581,334,0,0" VerticalAlignment="Top" Height="51" Width="102" Click="STOPER_Click"/>
-        <Label Content="Label" Margin="314,170,314,170"/>
+        <Button x:Name="stopwatch" Content="STOPWATCH" HorizontalAlignment="Left" Margin="565,317,0,0" VerticalAlignment="Top" Click="Button_Click" Height="49" Width="112"/>
+        <Label x:Name="timer" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center" Height="118" Width="410" FontSize="48" FontWeight="Bold" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

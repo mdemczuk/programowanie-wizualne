@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="Window1" Height="500" Width="400">
     <Grid>
-        <Button Content="START" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="50" Width="99"/>
-        <Button Content="STOP" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Height="50" Width="99"/>
-        <Label Content="Label" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="68" Width="99"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="749*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="start" Content="START" HorizontalAlignment="Left" Margin="36,364,0,0" VerticalAlignment="Top" Grid.Column="1" Height="44" Width="81" Click="start_Click"/>
+        <Button x:Name="stop" Content="STOP" HorizontalAlignment="Left" Margin="236,364,0,0" VerticalAlignment="Top" Grid.Column="1" Height="44" Width="81" Click="stop_Click"/>
+        <Label x:Name="stopwatch" Content="STOPWATCH" Grid.Column="1" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" Height="121" Width="303" FontSize="36" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

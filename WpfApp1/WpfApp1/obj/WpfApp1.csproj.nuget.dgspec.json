@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student.LAB-PAR-1\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {}
+    "C:\\Users\\marty\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student.LAB-PAR-1\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {
+    "C:\\Users\\marty\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student.LAB-PAR-1\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+        "projectUniqueName": "C:\\Users\\marty\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
         "projectName": "WpfApp1",
-        "projectPath": "C:\\Users\\student.LAB-PAR-1\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
-        "packagesPath": "C:\\Users\\student.LAB-PAR-1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student.LAB-PAR-1\\source\\repos\\WpfApp1\\WpfApp1\\obj\\",
+        "projectPath": "C:\\Users\\marty\\source\\repos\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+        "packagesPath": "C:\\Users\\marty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marty\\source\\repos\\WpfApp1\\WpfApp1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\student.LAB-PAR-1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\marty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
