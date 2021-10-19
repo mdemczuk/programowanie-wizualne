@@ -6,21 +6,27 @@
         xmlns:local="clr-namespace:Lab02"
         mc:Ignorable="d"
         Title="Marka" Height="450" Width="800">
-    <Grid>
-        <RadioButton x:Name="brandFiat" Content="Fiat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,62,0,0" Height="29" Width="163"/>
-        <RadioButton x:Name="brandFord" Content="Ford" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,91,0,0" Height="29" Width="163"/>
-        <RadioButton x:Name="brandFerrari" Content="Ferrari" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,120,0,0" Height="29" Width="163"/>
-        <CheckBox x:Name="equipmentSeat" Content="Podgrzewane siedzenie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,185,0,0" Height="14" Width="163"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,204,0,0" Height="19" Width="86"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,223,0,0" Height="19" Width="86"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,242,0,0" Height="19" Width="86"/>
-        <TextBox x:Name="insurancePolicy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="80,308,0,0"/>
-        <Label x:Name="labelBrand" Content="Marka" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,31,0,0" Width="105"/>
-        <Label x:Name="labelEquipment" Content="Wyposażenie" HorizontalAlignment="Left" Margin="80,154,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelPolicy" Content="Polisa" HorizontalAlignment="Left" Margin="80,277,0,0" VerticalAlignment="Top" Width="86"/>
-        <Button x:Name="brandReturn" Content="Powrót" HorizontalAlignment="Left" Margin="601,316,0,0" VerticalAlignment="Top" Width="75" Click="brandReturn_Click"/>
-        <Label x:Name="labelSum" Content="Suma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="601,216,0,0"/>
-        <Label x:Name="brandSum" Content="" HorizontalAlignment="Left" Margin="601,247,0,0" VerticalAlignment="Top" Height="22" Width="66"/>
+  <Grid>
+    <RadioButton x:Name="buttonFiat" Content="Fiat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,62,0,0" Height="29" Width="163"/>
+    <RadioButton x:Name="buttonFord" Content="Ford" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,91,0,0" Height="29" Width="163"/>
+    <RadioButton x:Name="buttonFerrari" Content="Ferrari" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,120,0,0" Height="29" Width="163"/>
 
-    </Grid>
+    <CheckBox x:Name="equipment1" Content="Podgrzewane siedzenie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,185,0,0" Height="14" Width="163" Checked="eq1Checked" Unchecked="eq1Unchecked"/>
+    <CheckBox x:Name="equipment2" Content="Przyciemnione szyby" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,204,0,0" Height="14" Width="132" Checked="eq2Checked" Unchecked="eq2Unchecked"/>
+    <CheckBox x:Name="equipment3" Content="Elektryczne szyby" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,223,0,0" Height="19" Width="132" Checked="eq3Checked" Unchecked="eq3Unchecked"/>
+    <CheckBox x:Name="equipment4" Content="Elektryczne lusterka boczne" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,242,0,0" Height="17" Width="163" Checked="eq4Checked" Unchecked="eq4Unchecked"/>
+
+    <TextBox x:Name="insurancePolicy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="80,308,0,0" TextChanged="InsuranceTextChanged"/>
+
+    <Label x:Name="labelBrand" Content="Marka" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,31,0,0" Width="105"/>
+    <Label x:Name="labelEquipment" Content="Wyposażenie" HorizontalAlignment="Left" Margin="80,154,0,0" VerticalAlignment="Top"/>
+    <Label x:Name="labelPolicy" Content="Polisa" HorizontalAlignment="Left" Margin="80,277,0,0" VerticalAlignment="Top" Width="86"/>
+
+    <Button x:Name="brandReturn" Content="Powrót" HorizontalAlignment="Left" Margin="601,316,0,0" VerticalAlignment="Top" Width="75" Click="brandReturn_Click"/>
+
+    <Label x:Name="labelSum" Content="Suma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="601,216,0,0"/>
+    <Label x:Name="brandSum" Content="" HorizontalAlignment="Left" Margin="601,247,0,0" VerticalAlignment="Top" Height="26" Width="66"/>
+    <Button x:Name="brandResult" Content="Zatwierdź" HorizontalAlignment="Left" Margin="601,292,0,0" VerticalAlignment="Top" Width="75" Click="brandResult_Click"/>
+
+  </Grid>
 </Window>

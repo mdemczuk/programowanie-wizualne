@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\marty\source\repos\Lab02\Lab02\obj\Debug\
+C:\Users\marty\source\repos\Lab02\Lab02\obj\Release\
 Lab02
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\marty\source\repos\Lab02\Lab02\App.xaml
 3-659925334
 
@@ -16,5 +16,5 @@ C:\Users\marty\source\repos\Lab02\Lab02\App.xaml
 13-1505183044
 brandWindow.xaml;engineWindow.xaml;MainWindow.xaml;
 
-False
+True
 

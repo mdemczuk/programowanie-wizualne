@@ -19,12 +19,82 @@ namespace Lab02
     /// </summary>
     public partial class brandWindow : Window
     {
-        public brandWindow(MainWindow mainWindow)
+        public brandWindow()
         {
             InitializeComponent();
         }
 
+        private void eq1Checked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(400);
+        }
 
+        private void eq1Unchecked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(-400);
+        }
+
+        private void eq2Checked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(5000);
+        }
+
+        private void eq2Unchecked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(-5000);
+        }
+
+        private void eq3Checked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(2800);
+        }
+
+        private void eq3Unchecked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(-2800);
+        }
+
+        private void eq4Checked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(3500);
+        }
+
+        private void eq4Unchecked(object sender, RoutedEventArgs e)
+        {
+            staticClass.SetEquipmentPrice(-3500);
+        }
+
+        private void InsuranceTextChanged(object sender, TextChangedEventArgs e)
+        {
+            int iPrice = 0;
+            if (!int.TryParse(insurancePolicy.Text, out iPrice))
+            {
+                iPrice = 0;
+            }
+            staticClass.SetInsurancePrice(iPrice);
+        }
+
+        private void brandResult_Click(object sender, RoutedEventArgs e)
+        {
+            if (buttonFord.IsChecked == true)
+            {
+                staticClass.SetBrandPrice(90000);
+            }
+
+            if (buttonFerrari.IsChecked == true)
+            {
+                staticClass.SetBrandPrice(120000);
+            }
+
+            if (buttonFiat.IsChecked == true)
+            {
+                staticClass.SetBrandPrice(70000);
+            }
+
+            staticClass.TotalBrandPrice = staticClass.CountBrandPrice();
+            brandSum.Content = staticClass.TotalBrandPrice.ToString();
+
+        }
 
         private void brandReturn_Click(object sender, RoutedEventArgs e)
         {

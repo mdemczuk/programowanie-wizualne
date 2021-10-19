@@ -8,21 +8,24 @@
         Title="Silnik" Height="450" Width="800">
     <Grid>
         <Label x:Name="labelEngine" Content="Rodzaj silnika" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,64,0,0"/>
-        <RadioButton x:Name="enginePetrol" Content="Benzyna" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,95,0,0"/>
-        <RadioButton x:Name="engineDiesel" Content="Diesel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,110,0,0"/>
-        <RadioButton x:Name="engineGas" Content="Gaz" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,125,0,0"/>
-        <RadioButton x:Name="engineHybrid" Content="Hybryda" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,140,0,0"/>
+        <RadioButton x:Name="buttonPetrol" Content="Benzyna" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,95,0,0"/>
+        <RadioButton x:Name="buttonDiesel" Content="Diesel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,110,0,0"/>
+        <RadioButton x:Name="buttonGas" Content="Gaz" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,125,0,0"/>
+        <RadioButton x:Name="buttonHybrid" Content="Hybryda" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,140,0,0"/>
         <Label x:Name="labelPower" Content="Moc" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,186,0,0" Height="27" Width="82"/>
 
         <ComboBox x:Name="enginePower" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="71,218,0,0" SelectionChanged="enginePower_SelectionChanged">
-            <ComboBoxItem Content="100 KM"></ComboBoxItem>
-            <ComboBoxItem Content="200 KM"></ComboBoxItem>
-            <ComboBoxItem Content="300 KM"></ComboBoxItem>
-            <ComboBoxItem Content="400 KM"></ComboBoxItem>
+            <ComboBoxItem x:Name="comboBox1" Content="100 KM"></ComboBoxItem>
+            <ComboBoxItem x:Name="comboBox2" Content="200 KM"></ComboBoxItem>
+            <ComboBoxItem x:Name="comboBox3" Content="300 KM"></ComboBoxItem>
+            <ComboBoxItem x:Name="comboBox4" Content="400 KM"></ComboBoxItem>
         </ComboBox>
+
+        <Label x:Name="labelePower" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,249,0,0"/>
         <Label x:Name="labelSum" Content="Suma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="601,216,0,0"/>
-        <Label x:Name="engineSum" Content="" HorizontalAlignment="Left" Margin="601,247,0,0" VerticalAlignment="Top" Height="22" Width="66"/>
+        <Label x:Name="engineSum" Content="" HorizontalAlignment="Left" Margin="601,247,0,0" VerticalAlignment="Top" Height="28" Width="66"/>
+        <Button x:Name="engineResult" Content="Zatwierdź" HorizontalAlignment="Left" Margin="601,292,0,0" VerticalAlignment="Top" Width="75" Click="engineResult_Click"/>
         <Button x:Name="engineReturn" Content="Powrót" HorizontalAlignment="Left" Margin="601,316,0,0" VerticalAlignment="Top" Width="75" Click="brandReturn_Click"/>
 
-    </Grid>
+  </Grid>
 </Window>

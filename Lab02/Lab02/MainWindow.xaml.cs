@@ -23,7 +23,6 @@ namespace Lab02
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         private void engine_Click(object sender, RoutedEventArgs e)
@@ -34,8 +33,16 @@ namespace Lab02
 
         private void brand_Click(object sender, RoutedEventArgs e)
         {
-            brandWindow bWindow = new brandWindow(this);
+            brandWindow bWindow = new brandWindow();
             bWindow.Show();
         }
+
+        private void result_Click(object sender, RoutedEventArgs e)
+        {
+            total_price.Content = staticClass.CountTotalPrice().ToString();
+        }
+
+        //total_price.Content = staticClass.TotalPrice;
+
     }
 }

@@ -11,6 +11,6 @@
         <Button x:Name="engine" Content="Silnik" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="260,191,0,0" Height="41" FontSize="20" Click="engine_Click"/>
         <Label x:Name="total_price" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="573,205,0,0" Height="27" Width="81"/>
         <Label x:Name="labelSum" Content="Cena całkowita:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="573,179,0,0"/>
-
+        <Button Name="result" Content="Oblicz cenę" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Margin="556,276,0,0" Height="41" FontSize="20" Click="result_Click"/>
     </Grid>
 </Window>

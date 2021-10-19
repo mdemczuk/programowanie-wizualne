@@ -58,6 +58,7 @@
     <Compile Include="brandWindow.xaml.cs">
       <DependentUpon>brandWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="staticClass.cs" />
     <Page Include="brandWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
