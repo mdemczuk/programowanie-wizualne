@@ -10,7 +10,7 @@ namespace Lab3
     {
         private string itemName;
         private int itemCount;
-        private int itemIndex = 0;
+        private int itemIndex = InxNumber.IndexNumber;
         public string ItemName 
         {
             get { return itemName; } 
@@ -29,27 +29,6 @@ namespace Lab3
             set { itemIndex = value; }
         }
 
-        public keeper(string ItemName, int ItemIndex, int ItemCount)
-        {
-            this.ItemName = ItemName;
-            this.ItemIndex = ItemIndex;
-            this.ItemCount = ItemCount;
-        }
-
-        public void SetItemName(string itName)
-        {
-            ItemName = itName;
-        }
-
-        public void SetItemCount(int itCount)
-        {
-            ItemCount = itCount;
-        }
-
-        public void SetItemIndex()
-        {
-            ItemIndex += 1;
-        }
     }
 }
 

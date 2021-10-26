@@ -11,15 +11,15 @@
         <ListView Margin="183,10,184.6,91.4" x:Name="listView">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn x:Name="Name" Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn x:Name="ID" Header="ID" Width="50" DisplayMemberBinding="{Binding ID}" />
-                    <GridViewColumn x:Name="Count" Header="Count" Width="150" DisplayMemberBinding="{Binding Count}" />
+                    <GridViewColumn x:Name="Name" Header="Name" Width="120" DisplayMemberBinding="{Binding ItemName}" />
+                    <GridViewColumn x:Name="ID" Header="ID" Width="50" DisplayMemberBinding="{Binding ItemIndex}" />
+                    <GridViewColumn x:Name="Count" Header="Count" Width="150" DisplayMemberBinding="{Binding ItemCount}" />
                 </GridView>
             </ListView.View>
 
         </ListView>
-        <Button x:Name="button_save" Content="Zapis do .CVS" HorizontalAlignment="Left" Margin="183,508,0,0" VerticalAlignment="Top" Width="99" Height="25"/>
-        <Button x:Name="button_read" Content="Odczyt z .CSV" HorizontalAlignment="Left" Margin="410,508,0,0" VerticalAlignment="Top" Width="99" Height="25"/>
+        <Button x:Name="button_save" Content="Save to CSV file" HorizontalAlignment="Left" Margin="183,508,0,0" VerticalAlignment="Top" Width="107" Height="25" Click="button_save_Click"/>
+        <Button x:Name="button_read" Content="Read from CSV file" HorizontalAlignment="Left" Margin="398,508,0,0" VerticalAlignment="Top" Width="111" Height="25" Click="button_read_Click"/>
         <Button x:Name="button_add" Content="Add" HorizontalAlignment="Left" Margin="568,60,0,0" VerticalAlignment="Top" Width="75" Click="button_add_Click"/>
     </Grid>
 </Window>

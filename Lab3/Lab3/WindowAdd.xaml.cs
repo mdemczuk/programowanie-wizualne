@@ -44,11 +44,12 @@ namespace Lab3
 
         private void button_add_item_Click(object sender, RoutedEventArgs e)
         {
+            InxNumber.IndexNumber += 1;
             Beverages AddBeverage = new Beverages();
             AddBeverage.ItemName = itName;
             AddBeverage.ItemCount = itCount;
-            AddBeverage.ItemIndex += 1;
             List.listView.Items.Add(AddBeverage);
+            
             this.Close();
         }
     }
