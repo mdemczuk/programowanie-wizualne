@@ -1,0 +1,18 @@
+﻿<Window x:Class="Lab04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab04"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="upload_button" Content="Upload image" HorizontalAlignment="Left" Margin="117,69,0,0" VerticalAlignment="Top" Width="82" Click="upload_button_Click"/>
+        <Button x:Name="optionA" Content="Flip horizontal" HorizontalAlignment="Left" Margin="117,120,0,0" VerticalAlignment="Top" Width="82" Click="optionA_Click"/>
+        <Button x:Name="optionB" Content="Rotate left 90°" HorizontalAlignment="Left" Margin="117,153,0,0" VerticalAlignment="Top" Width="82" Click="optionB_Click"/>
+        <Button x:Name="optionC" Content="Only greens" HorizontalAlignment="Left" Margin="117,186,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="optionD" Content="Negative" HorizontalAlignment="Left" Margin="117,218,0,0" VerticalAlignment="Top" Width="82"/>
+        <Image Margin="347,43,50.6,153" Name="imgPhoto" Stretch="Fill"  />
+
+    </Grid>
+</Window>
