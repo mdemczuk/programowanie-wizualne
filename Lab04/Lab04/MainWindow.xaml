@@ -10,8 +10,8 @@
         <Button x:Name="upload_button" Content="Upload image" HorizontalAlignment="Left" Margin="117,69,0,0" VerticalAlignment="Top" Width="82" Click="upload_button_Click"/>
         <Button x:Name="optionA" Content="Flip horizontal" HorizontalAlignment="Left" Margin="117,120,0,0" VerticalAlignment="Top" Width="82" Click="optionA_Click"/>
         <Button x:Name="optionB" Content="Rotate left 90°" HorizontalAlignment="Left" Margin="117,153,0,0" VerticalAlignment="Top" Width="82" Click="optionB_Click"/>
-        <Button x:Name="optionC" Content="Only greens" HorizontalAlignment="Left" Margin="117,186,0,0" VerticalAlignment="Top" Width="82"/>
-        <Button x:Name="optionD" Content="Negative" HorizontalAlignment="Left" Margin="117,218,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="optionC" Content="Only greens" HorizontalAlignment="Left" Margin="117,186,0,0" VerticalAlignment="Top" Width="82" Click="optionC_Click"/>
+        <Button x:Name="optionD" Content="Negative" HorizontalAlignment="Left" Margin="117,218,0,0" VerticalAlignment="Top" Width="82" Click="optionD_Click"/>
         <Image Margin="347,43,50.6,153" Name="imgPhoto" Stretch="Fill"  />
 
     </Grid>
