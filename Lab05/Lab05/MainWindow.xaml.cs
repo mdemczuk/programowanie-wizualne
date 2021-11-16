@@ -44,6 +44,7 @@ namespace Lab05
             return count;
         }
 
+
         private void button_Load_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -52,7 +53,8 @@ namespace Lab05
             {
                 Sequence = System.IO.File.ReadAllText(open.FileName);
                 Sequence = Regex.Replace(Sequence, @"\s+", "");
-                textbox_Sequence.Text = Sequence;
+                textbox_Sequence.Document.Blocks.Clear();
+                textbox_Sequence.Document.Blocks.Add(new Paragraph(new Run(Sequence)));
             }
         }
 
@@ -80,15 +82,28 @@ namespace Lab05
 
         private void combobox_Choose_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            textbox_Sequence.SelectionStart = 2;
-            textbox_Sequence.SelectionLength = 4;
-            /*for(int i = 0; i < Sequence.Length; i++)
-            {
-                int patternStartIndex = textbox_Found.Text.IndexOf(combobox_Choose.SelectedValue.ToString(), i);
-                textbox_Found.SelectionStart = patternStartIndex;
-                textbox_Found.SelectionLength = 4;
-            }*/
+            var start = textbox_Sequence.Document.ContentStart;
+            var end = textbox_Sequence.Document.ContentEnd;
+            new TextRange(start, end).ClearAllProperties();
 
+
+            while (start.CompareTo(end) < 0)
+            {
+                var pattern = combobox_Choose.SelectedValue.ToString();
+                var forwardIndex = start.GetTextInRun(LogicalDirection.Forward).IndexOf(pattern);
+                if (forwardIndex >= 0)
+                {
+                    start = start.GetPositionAtOffset(forwardIndex);
+                    if (start != null)
+                    {
+                        TextRange selection = new TextRange(start, start.GetPositionAtOffset(pattern.Length));
+                        selection.ApplyPropertyValue(TextElement.BackgroundProperty, new SolidColorBrush(Colors.PaleVioletRed));
+                    }
+                }
+
+                start = start.GetNextContextPosition(LogicalDirection.Forward);
+            }
         }
     }
+    
 }

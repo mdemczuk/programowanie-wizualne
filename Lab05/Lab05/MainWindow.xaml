@@ -11,7 +11,15 @@
         <Button x:Name="button_Find" Content="Znajdź wzorce" HorizontalAlignment="Left" Margin="78,92,0,0" VerticalAlignment="Top" Width="109" Height="32" Click="button_Find_Click"/>
         <ComboBox x:Name="combobox_Choose" HorizontalAlignment="Left" Margin="78,129,0,0" VerticalAlignment="Top" Width="109" Height="32" SelectionChanged="combobox_Choose_SelectionChanged"/>
         <TextBox x:Name="textbox_Found" HorizontalAlignment="Left" Height="187" Margin="45,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190" IsReadOnly="True"/>
-        <TextBox x:Name="textbox_Sequence" HorizontalAlignment="Left" Height="342" Margin="294,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="469" IsReadOnly="True"/>
+        
+        <RichTextBox x:Name="textbox_Sequence" HorizontalAlignment="Left" Height="342" Margin="294,41,0,0" VerticalAlignment="Top" Width="469">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
 
     </Grid>
 </Window>
