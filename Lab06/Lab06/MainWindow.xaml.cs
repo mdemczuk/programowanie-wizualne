@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -25,79 +26,103 @@ namespace Lab06
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    /// 
-
-    static class InxNumber
-    {
-        public static int IndexNumber = 0;
-    }
-
+    ///
     public partial class MainWindow : Window
     {
+        int globalIndex = 0;
+        List<Beverages> beveragesList = new List<Beverages>();
+        static string configPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+        Configuration configuration = ConfigurationManager.OpenExeConfiguration(configPath);
+
+        private void load_data(string filePath)
+        {
+            if (!string.IsNullOrEmpty(filePath) && File.Exists(filePath))
+            {
+                globalIndex = 0;
+                using (var fileStream = File.OpenRead(filePath))
+                {
+                    var xmlSerializer = new XmlSerializer(typeof(List<Beverages>));
+                    beveragesList = (List<Beverages>)xmlSerializer.Deserialize(fileStream);
+                    listView.Items.Clear();
+                    beveragesList.ForEach(each => listView.Items.Add(each));
+                    listView.Items.Refresh();
+                }
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            load_data(configuration.AppSettings.Settings["dataFile"].Value);
         }
 
         private void button_add_Click(object sender, RoutedEventArgs e)
         {
-            WindowAdd aWindow = new WindowAdd(this);
-            aWindow.Show();
+            WindowAdd window = new WindowAdd();
+            window.ShowDialog();
+
+            var beverage = new Beverages { itemName = window.itemName,
+                itemCount = window.itemCount, itemIndex = ++globalIndex };
+
+            beveragesList.Add(beverage);
+            listView.Items.Add(beverage);
+            listView.Items.Refresh();
         }
 
         private void button_save_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog dialog = new SaveFileDialog();
-            if (dialog.ShowDialog() ?? true)
+            var saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() ?? true)
             {
-                using (FileStream fileWriter = new FileStream(dialog.FileName, FileMode.OpenOrCreate))
+                using (var fileStream = File.OpenWrite(saveFileDialog.FileName))
                 {
-                    XmlSerializer serializer = new XmlSerializer(typeof(Beverages[]));
-                    serializer.Serialize(fileWriter, listView.Items.OfType<Beverages>().ToList().ToArray());
+                    var xmlSerializer = new XmlSerializer(typeof(List<Beverages>));
+                    xmlSerializer.Serialize(fileStream, beveragesList);
                 }
             }
         }
 
         private void button_read_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() ?? true)
+            var openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() ?? true)
             {
-                using (FileStream fileReader = new FileStream(dialog.FileName, FileMode.OpenOrCreate))
-                {
-                    InxNumber.IndexNumber = 1;
-                    listView.Items.Clear();
-                    XmlSerializer deserializer = new XmlSerializer(typeof(List<Beverages>));
-                    foreach (Beverages item in (List<Beverages>)deserializer.Deserialize(fileReader))
-                    {
-                        listView.Items.Add(item);
-                        InxNumber.IndexNumber++;
-                    }
-                    listView.Items.Refresh();
-                }
-                listView.Items.Refresh();
+                load_data(openFileDialog.FileName);
+
+                configuration.AppSettings.Settings.Remove("dataFile");
+                configuration.AppSettings.Settings.Add("dataFile", openFileDialog.FileName);
+                configuration.Save(ConfigurationSaveMode.Modified);
             }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Do you want to save your data?", "Save data", MessageBoxButtons.YesNo);
-            switch (dialogResult)
+            if (dialogResult == System.Windows.Forms.DialogResult.Yes)
             {
-                case System.Windows.Forms.DialogResult.Yes:
-                    SaveFileDialog dialog = new SaveFileDialog();
-                    if (dialog.ShowDialog() ?? true)
-                    {
-                        using (FileStream fileWriter = new FileStream(dialog.FileName, FileMode.OpenOrCreate))
-                        {
-                            XmlSerializer serializer = new XmlSerializer(typeof(List<Beverages>));
-                            serializer.Serialize(fileWriter, listView.Items.OfType<List<Beverages>>().ToList().ToArray());
-                        }
-                    }
-                    break;
-                case System.Windows.Forms.DialogResult.No:
-                    break;
+                button_save_Click(null, null);
             }
+        }
+
+        private void textbox_filter_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            listView.Items.Clear();
+            if (string.IsNullOrEmpty(textbox_filter.Text))
+            {
+                beveragesList.ForEach(each => listView.Items.Add(each));
+            }
+            else
+            {
+                foreach (Beverages each in beveragesList)
+                {
+                    if (each.itemName.Contains(textbox_filter.Text) ||
+                        each.itemCount.ToString().Contains(textbox_filter.Text))
+                    {
+                        listView.Items.Add(each);
+                    }   
+                }
+            }
+            listView.Items.Refresh();
         }
     }
 }

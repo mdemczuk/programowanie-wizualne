@@ -15,3 +15,38 @@ C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.csproj.GenerateResource.
 C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.csproj.CoreCompileInputs.cache
 C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.exe
 C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.pdb
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\bin\Debug\Lab06.exe.config
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\bin\Debug\Lab06.exe
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\bin\Debug\Lab06.pdb
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.csproj.AssemblyReference.cache
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.csproj.SuggestedBindingRedirects.cache
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\MainWindow.g.cs
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\WindowAdd.g.cs
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\App.g.cs
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06_MarkupCompile.cache
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06_MarkupCompile.lref
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\MainWindow.baml
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\WindowAdd.baml
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.g.resources
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.Properties.Resources.resources
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.csproj.GenerateResource.cache
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.csproj.CoreCompileInputs.cache
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.exe
+C:\Users\windows\Desktop\programowanie-wizualne-main\Lab06\Lab06\obj\Debug\Lab06.pdb
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\bin\Debug\Lab06.exe.config
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\bin\Debug\Lab06.exe
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\bin\Debug\Lab06.pdb
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.csproj.AssemblyReference.cache
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\MainWindow.g.cs
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\WindowAdd.g.cs
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\App.g.cs
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06_MarkupCompile.cache
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06_MarkupCompile.lref
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\MainWindow.baml
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\WindowAdd.baml
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.g.resources
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.Properties.Resources.resources
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.csproj.GenerateResource.cache
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.csproj.CoreCompileInputs.cache
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.exe
+C:\Users\marty\Documents\studia\semestr 5\pw\xdxasd\Lab06\Lab06\obj\Debug\Lab06.pdb
