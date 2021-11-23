@@ -1,0 +1,17 @@
+C:\Users\marty\source\repos\Lab06\Lab06\bin\Debug\Lab06.exe.config
+C:\Users\marty\source\repos\Lab06\Lab06\bin\Debug\Lab06.exe
+C:\Users\marty\source\repos\Lab06\Lab06\bin\Debug\Lab06.pdb
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.csproj.AssemblyReference.cache
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\MainWindow.g.cs
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\WindowAdd.g.cs
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\App.g.cs
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06_MarkupCompile.cache
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06_MarkupCompile.lref
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\MainWindow.baml
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\WindowAdd.baml
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.g.resources
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.Properties.Resources.resources
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.csproj.GenerateResource.cache
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.csproj.CoreCompileInputs.cache
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.exe
+C:\Users\marty\source\repos\Lab06\Lab06\obj\Debug\Lab06.pdb
