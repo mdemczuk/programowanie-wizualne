@@ -1,0 +1,16 @@
+﻿<Window x:Class="Lab10.MainWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="376" Width="500" MinWidth="500" MaxWidth="500" MinHeight="499" MaxHeight="500">
+    <Grid>
+        <Button x:Name="Button_Play" Content="Play" HorizontalAlignment="Left" Margin="28,384,0,0" VerticalAlignment="Top" MinWidth="200" MaxWidth="200" MaxHeight="40" MinHeight="40" Click="Button_Play_Click"/>
+        <Button x:Name="Button_Stop" Content="Stop" HorizontalAlignment="Left" Margin="272,384,0,0" VerticalAlignment="Top" MinWidth="200" MaxWidth="200" MaxHeight="40" MinHeight="40" Click="Button_Stop_Click"/>
+        <ListBox x:Name="ListBox_Songs" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,10,124" DisplayMemberPath="Name">
+        </ListBox>
+
+    </Grid>
+</Window>
